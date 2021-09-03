@@ -1,0 +1,14 @@
+/target
+
+### IntelliJ IDEA ###
+.idea
+*.iml
+
+### STS ###
+/.Sts4-cache
+.sts4-cache/*
+*.bak
+*.settings
+*.project
+*.factorypath
+*.classpath
