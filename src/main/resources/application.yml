@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /phone-number-validator
+
+spring:
+  jpa:
+    database-platform : com.jumia.phone.validator.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto : update
+
+  datasource:
+    url : jdbc:sqlite:sample.db
+    driver-class-name: org.sqlite.JDBC
+    username: admin
+    password: admin
+    
