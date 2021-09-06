@@ -32,7 +32,7 @@ mvn spring-boot:run
 
 Then open http://localhost:8080/phone-number-validator/customers/phoneNumbers
 
-- To run the project using Docket, run below code in root:
+- To run the project using Docker, run below code in root:
 
 ```bash
 docker build -t phone-number-validator .
