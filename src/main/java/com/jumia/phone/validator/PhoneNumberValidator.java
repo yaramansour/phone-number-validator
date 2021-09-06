@@ -3,14 +3,12 @@ package com.jumia.phone.validator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 
 /**
  * Spring boot application launcher class
  * @author Yara Mansour
  */
-
 @SpringBootApplication
 public class PhoneNumberValidator {
 

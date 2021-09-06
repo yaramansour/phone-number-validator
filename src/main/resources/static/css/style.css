@@ -1,0 +1,91 @@
+body {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: #f68b1e;
+  text-transform: capitalize;
+}
+
+form {
+  text-align: center;
+}
+
+form button {
+  background-color: #f68b1e;
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+select {
+  border: 0 none;
+  color: #000;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 2px 10px;
+  width: 30%;
+  height: 35px;
+}
+
+table {
+  width: 850px;
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+th {
+  background: #f68b1e;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  table {
+    width: 100%;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    color: #000;
+    font-weight: bold;
+  }
+}

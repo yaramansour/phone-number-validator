@@ -1,0 +1,43 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Numbers Validator</title>
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
+
+</head>
+<body>
+<h1> International phone number validation</h1>
+
+<form class="form" action="#" th:action="@{/customers/phoneNumbers}" method="get">
+
+    <select th:field="${customersView.country}" >
+        <option value="">select a country</option>
+        <option th:each="country : ${customersView.countries}" th:value="${country}" th:text="${country}"></option>
+    </select>
+
+    <select th:field="${customersView.state}" >
+        <option value="">select a state</option>
+        <option th:each="state : ${customersView.states}" th:value="${state}" th:text="${state}"></option>
+    </select>
+
+    <button value="update" type="submit"> Apply Filters</button>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Country</th>
+            <th>State</th>
+        </tr>
+        <tr th:each="customer: ${customersView.customers}">
+            <td th:text="${customer.name}" />
+            <td th:text="${customer.phone}" />
+            <td th:text="${customer.country}" />
+            <td th:text="${customer.state}" />
+        </tr>
+    </table>
+
+</form>
+
+</body>
+</html>

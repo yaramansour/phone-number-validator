@@ -14,4 +14,3 @@ spring:
     driver-class-name: org.sqlite.JDBC
     username: admin
     password: admin
-    
