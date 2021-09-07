@@ -38,7 +38,7 @@ Then open http://localhost:8080/phone-number-validator/customers/phoneNumbers
 docker build -t phone-number-validator .
 ```
 ```bash
-docker run -p8282:8080 message-server.
+docker run -p8080:8080 phone-number-validator.
 ```
 
-Then open http://localhost:8282/phone-number-validator/customers/phoneNumbers
+Then open http://localhost:8080/phone-number-validator/customers/phoneNumbers
